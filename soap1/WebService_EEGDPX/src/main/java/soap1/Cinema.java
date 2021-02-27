@@ -140,7 +140,7 @@ public class Cinema implements ICinema {
 		ArrayList<StatusWrapper> candy = new ArrayList<>();
 		for(int i = colN; i < colN + count; ++i) {
 			StatusWrapper c = row.get(i);
-			if(SeatStatus.FREE.equals(c.status)) {
+			if(!SeatStatus.LOCKED.equals(c.status)) {
 				candy.add(c);
 			} else {
 				CinemaException exception = new CinemaException();

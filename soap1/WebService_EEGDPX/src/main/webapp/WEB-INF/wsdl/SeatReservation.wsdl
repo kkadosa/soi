@@ -236,7 +236,7 @@
 
 	<wsdl:service name="CinemaService">
 		<wsdl:port name="ICinema_HttpSoap11_Port" binding="ns0:ICinema_HttpSoap11_Binding">
-			<soap:address location="http://localhost:8080/WebService_NEPTUN/Cinema"/>
+			<soap:address location="http://localhost:8080/WebService_EEGDPX/Cinema"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
